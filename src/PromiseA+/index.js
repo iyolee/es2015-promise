@@ -24,7 +24,7 @@ function Promise(f) {
     flag = true;
     resolvePromise(this, value, onFulfilled, onRejected);
   }
-  const resolve = reason => {
+  const reject = reason => {
     if (flag) {
       return;
     }
